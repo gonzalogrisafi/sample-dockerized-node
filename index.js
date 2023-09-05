@@ -8,7 +8,7 @@ const Animal = mongoose.model('Animal', new mongoose.Schema({
 
 const app = express();
 
-mongoose.connect('mongodb://admin:admin@localhost:27017/myapp?authSource=admin')
+mongoose.connect('mongodb://admin:admin@monguito:27017/myapp?authSource=admin')
     .then(() => console.log('connected to db'));
 
 app.get('/animals', async (_req, res) => {
